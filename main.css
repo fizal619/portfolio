@@ -1,0 +1,135 @@
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+	position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 50px;
+    background-color: darkorange;
+}
+
+.header-text {
+	font-size: 2em;
+	color: white;
+	display: inline;
+	float: left;
+}
+
+.nav-item {
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	margin: 5px 10px 5px 10px;
+}
+
+.background-image {
+	background: url(./images/backgroundimage.jpg) fixed center no-repeat;
+	background-size: cover;
+}
+
+.background-color {
+	background-color: rgba(0,0,0, 0.5);
+	height: 100vw;
+	width: 100vw;
+}
+
+section {
+	margin-top: 50px;
+}
+
+.about-me-description {
+	background-color: blue;
+}
+
+.about-me-description-header{
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.about-me-description-body {
+	font-size: 1em;
+	color: white;
+	margin: 5%, 5%, 5%, 0%;
+	padding: 1%;
+}
+
+.self-image {
+	float: left;
+}
+
+.image-gallery {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: inherit;
+}
+
+.image-gallery-item {
+	background-size: cover;
+	width: 33%;
+	height: 200px;
+	justify-content: space-between;
+	background-repeat: no-repeat;	
+	background-position: center;
+}
+
+.image-gallery-item: hover {
+	background-color: yellow;
+}
+
+.footer {
+	position: fixed; /* Set the navbar to fixed position */
+    bottom: 0px;
+    width: 100%; /* Full width */
+    background-color: darkorange;
+}
+
+ .footer-item {
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	margin: 5px 10px 5px 10px;
+ }
+
+/* css overlay https://www.limelightonline.co.nz/blog/image-overlay-hover-effects-with-css/ */
+
+	.image-gallery-item-overlay {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%%;
+   height: 100%;
+   background-color: grey;
+   opacity: 0.6;
+}
+
+	.image-gallery-item-overlay: hover {
+   opacity: 0;
+
+}
+	@media(max-width: 768px) {
+	.image-gallery-item {
+	width: 50%;
+  }
+
+	@media (max-width: 480px) {
+	.image-gallery-item {
+	width: 100%;
+  }
+
+
